@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: max-content auto max-content;
+}
+header {
+    width: 100%;
+    background-color:blue;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    padding: 20px;
+    background-color: orange;
+
+}
+
+#checking{
+    display: none;
+}
+
+.fa-bars {
+    font-size: 24px;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+}
+
+label {
+    display: none;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    gap: 8px;
+}
+
+a {
+ display: block;
+ padding: 15px;
+ text-align: center;
+}
+
+li {
+   background-color: red;
+   list-style: none;
+
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+@media (width<768px) {
+    body {
+        background-color: rgb(0, 238, 255);
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        border: 10px solid;
+
+    }
+}
+
+#checking:checked~nav{
+    left: 0;
+}
+
+section {
+    width: 90vw;
+    border: 5px solid green;
+    padding: 15px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+footer {
+    height: 100%;
+    text-align: center;
+    background-color: rgb(140, 0, 255);
+}
+main {
+   
+    margin-top: 100px;
+    background-color: rgb(0, 238, 255);
+}
+.unatarjeta {
+    width: 300px;
+    border: solid 1px;
+}
+.unatarjeta img{
+    width: 100%;
+}
+.cajondetarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.logo{
+    width: 80px;
+}
+.navfooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navfooter a{
+    text-decoration: none;
+    color: darkblue;
+}

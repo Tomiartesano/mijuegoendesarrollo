@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betatale</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="Imagenes/LogodeBetatalepagina (1).png" alt="" class="logo">
+        </a>
+        <input type="checkbox" id="checking">
+        <label for="checking"><i class="fa-solid fa-bars"></i></label>
+        <nav>
+            <ul>
+                <li class="menuitem"><a href="#Introcucción">Introducción</a></li>
+                <li class="menuitem"><a href="#Protagonistas">Protagonistas</a></li>
+                <li class="menuitem"><a href="#Personajesytrasfondo">Personajes y trasfondo</a></li>
+                <li class="menuitem"><a href="#Historiadeljuego">Historia del juego</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Introcucción">
+            <h2>Introducción</h2>
+            <p>El juego comienza con dos hermanos, Tom y Frisk explorando las riunad del monte Ebott, un lugar donde se rumorea an desaparecido varios niños de no mas de 13 años, sin saberlo por tropezar por una pequeña raiz ambos comenzaran una aventura en la que comenzaran nuevos amigos y tal vez una nueva familia.</p>
+        </section>
+        <section id="Protagonistas">
+            <h2>Protagonistas</h2>
+
+            <div class="cajondetarjetas">
+
+                <div class="unatarjeta">
+                    <figure>
+                        <img src="Imagenes/Frisk.jfif" alt="">                        
+                    </figure>
+                    <div class="desctripcionpro">
+                        <h3>Frisk</h3>
+                        <a href="">saber mas</a>
+                    </div>
+                </div>
+
+                 <div class="unatarjeta">
+                    <figure>
+                        <img src="Imagenes/Tom betatale 1.png" alt="Imagen de Tom">                        
+                    </figure>
+                    <div class="desctripcionpro">
+                        <h3>Tom</h3>
+                        <a href="">saber mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Personajesytrasfondo">
+            <h2>Personajes y su trasfondo:</h2>
+            <div class="cajondetarjetas">
+            <div class="unatarjeta">
+                    <figure>
+                        <img src="Imagenes/Asgore.png" alt="Imagen de Tom">                        
+                    </figure>
+                    <div class="desctripcionpro">
+                        <h3>Familia Dreammur</h3>
+                        <p>La familia real</p>
+                        <a href="" target="_blank">saber mas</a>
+                    </div>
+                </div>
+                <div class="unatarjeta">
+                    <figure>
+                        <img src="Imagenes/Flia. Phoenix.png" alt="familia phoenix img">                        
+                    </figure>
+                    <div class="desctripcionpro">
+                        <h3>Familia Phoenix</h3>
+                        <p>Duques del subsuelo</p>
+                        <a href="" target="_blank">saber mas</a>
+                    </div>
+                </div>
+                <div class="unatarjeta">
+                    <figure>
+                        <img src="../Camp Snoopy Activity 1.avif" alt="Imagen de Tom">                        
+                    </figure>
+                    <div class="desctripcionpro">
+                        <h3>Familia Esqueleto</h3>
+                        <p>Familia de guardias reales</p>
+                        <a href="" target="_blank">saber mas</a>
+                    </div>
+                </div>
+                <div class="unatarjeta">
+                    <figure>
+                        <img src="../Camp Snoopy Activity 1.avif" alt="Imagen de Tom">                        
+                    </figure>
+                    <div class="desctripcionpro">
+                        <h3>Familia Gerson</h3>
+                        <p>La familia mas potente de todas</p>
+                        <a href="" target="_blank">saber mas</a>
+                    </div>
+                </div>
+            
+        </section>
+        <section id="Historiadeljuego">
+            <h2>Historia del juego:</h2>
+            <p>La historia de este AU (Alternative universe) fue crada por mi cuando solo tenia 10 años... Ahora en la actualidad el au fue adaptado de nuevo y tiene nuevas cosas, personajes unicos y especiales. A pesar de ser muy parecido a undertale este AU nos lleva a la perspectiva de algo que tal vez, solo tal vez pudo llegar a ser undertale.</p>
+            <h3>Historia: Tomiartesano</h3>
+            <h3>Ilustraciones: Tomiartesano y amigos</h3>
+        </section>
+    </main>
+    <footer>
+        <h3>&copy;2025-Tomiartesano Derechos Reservados</h3>
+        <div class="navfooter">
+                <a href="#Introcucción">Introducción</a>
+                <a href="#Protagonistas">Protagonistas</a>
+                <a href="#Personajesytrasfondo">Personajes y trasfondo</a>
+                <a href="#Historiadeljuego">Historia del juego</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checking = document.querySelector("#checking");
+            const menuitem = document.querySelectorAll(".menuitem");
+            menuitem.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    checking.checked = false; // Desmarca el checkbox
+
+                });
+            });
+        });
+    </script>
+</body>
+</html>
