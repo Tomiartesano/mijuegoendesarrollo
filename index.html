@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betatale</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Index.css">
 </head>
+
 <body>
     <header>
         <a href="">
@@ -28,7 +30,9 @@
     <main>
         <section id="Introcucción">
             <h2>Introducción</h2>
-            <p>El juego comienza con dos hermanos, Tom y Frisk explorando las riunad del monte Ebott, un lugar donde se rumorea an desaparecido varios niños de no mas de 13 años, sin saberlo por tropezar por una pequeña raiz ambos comenzaran una aventura en la que comenzaran nuevos amigos y tal vez una nueva familia.</p>
+            <p>El juego comienza con dos hermanos, Tom y Frisk explorando las riunad del monte Ebott, un lugar donde se
+                rumorea an desaparecido varios niños de no mas de 13 años, sin saberlo por tropezar por una pequeña raiz
+                ambos comenzaran una aventura en la que comenzaran nuevos amigos y tal vez una nueva familia.</p>
         </section>
         <section id="Protagonistas">
             <h2>Protagonistas</h2>
@@ -37,73 +41,112 @@
 
                 <div class="unatarjeta">
                     <figure>
-                        <img src="Imagenes/Frisk.jfif" alt="">                        
+                        <img src="Imagenes/Frisk.jfif" alt="">
                     </figure>
                     <div class="desctripcionpro">
                         <h3>Frisk</h3>
-                        <a href="">saber mas</a>
+                        <button class="abrirbtn" onclick="document.querySelector('.ventana1').showModal()">Mas
+                            info</button>
                     </div>
+                    <dialog class="ventana1">
+                        <h4>Informacion del personaje</h4>
+                        <p>Ella es la hermana mayor de Tom por unos minutos, es inteligente y agil, aunque es un poco
+                            mas pequeña que si hermano, le teme a las alturas y es super popular en su escuela por sus
+                            ojso medio cerrados. Le gustan las tartas de caramelo que de vez en cuando cocina su hermano
+                            y </p>
+                        <button class="cerrarbtn" onclick="document.querySelector('.ventana1').close()">cerrar</button>
                 </div>
 
-                 <div class="unatarjeta">
+                <div class="unatarjeta">
                     <figure>
-                        <img src="Imagenes/Tom betatale 1.png" alt="Imagen de Tom">                        
+                        <img src="Imagenes/Tom betatale 1.png" alt="Imagen de Tom">
                     </figure>
                     <div class="desctripcionpro">
                         <h3>Tom</h3>
-                        <a href="">saber mas</a>
+                        <button class="abrirbtn" onclick="document.querySelector('.ventana2').showModal()">Mas
+                            info</button>
+                        <dialog class="ventana2">
+                            <h4>Informacion del personaje</h4>
+                            <p>Tom es el hermano menor de Frisk al menos por unos minutos, al caer al subsuelo tiene la
+                                misma edad que Frisk. Es valiente aunque algo tonto en ocaciones, ama cocinar y jugar
+                                con sus pocos "amigos". Admira a Frisk por ser constante en cada cosa que hace.</p>
+                            <button class="cerrarbtn"
+                                onclick="document.querySelector('.ventana2').close()">cerrar</button>
                     </div>
                 </div>
-            </div>
         </section>
         <section id="Personajesytrasfondo">
             <h2>Personajes y su trasfondo:</h2>
             <div class="cajondetarjetas">
-            <div class="unatarjeta">
+                <div class="unatarjeta">
                     <figure>
-                        <img src="Imagenes/Asgore.png" alt="Imagen de Tom">                        
+                        <img src="Imagenes/Flia. Dreamur.png" alt="Img familia Dreammur">
                     </figure>
                     <div class="desctripcionpro">
                         <h3>Familia Dreammur</h3>
                         <p>La familia real</p>
-                        <a href="" target="_blank">saber mas</a>
+                        <button class="abrirbtn" onclick="document.querySelector('.ventana3').showModal()">Mas
+                            info</button>
                     </div>
+                    <dialog class="ventana3">
+                        <h4>Informacion de esta familia</h4>
+                        <p>La tragica familia real, para entender el por que le decimos... "tragica" es por que ellos an perdido a sus niños de la manera mas tragica posible... Aunque quien sabe... Quizas nosotros los players podamos a ayudarlos a tener un final feliz</p>
+                        <button class="cerrarbtn" onclick="document.querySelector('.ventana3').close()">cerrar</button>
                 </div>
                 <div class="unatarjeta">
                     <figure>
-                        <img src="Imagenes/Flia. Phoenix.png" alt="familia phoenix img">                        
+                        <img src="Imagenes/Flia. Phoenix.png" alt="familia phoenix img">
                     </figure>
                     <div class="desctripcionpro">
                         <h3>Familia Phoenix</h3>
                         <p>Duques del subsuelo</p>
-                        <a href="" target="_blank">saber mas</a>
+                        <button class="abrirbtn" onclick="document.querySelector('.ventana4').showModal()">Mas
+                            info</button>
                     </div>
+                     <dialog class="ventana">
+                        <h4>Informacion de los integrantes de esta familia</h4>
+                        <p>Esta familia es la segunda mas importante en este subsuelo luego de la familia real, aunque esta desprecie a los plebeyos y demas monstruos que no son como ellos o que poseen sus ideales. (Aunque quizas no todos sean tan malos como dicen ser...) </p>
+                        <button class="cerrarbtn" onclick="document.querySelector('.ventana4').close()">cerrar</button>
+                     </dialog>
                 </div>
                 <div class="unatarjeta">
-                    <figure>
-                        <img src="../Camp Snoopy Activity 1.avif" alt="Imagen de Tom">                        
-                    </figure>
-                    <div class="desctripcionpro">
-                        <h3>Familia Esqueleto</h3>
-                        <p>Familia de guardias reales</p>
-                        <a href="" target="_blank">saber mas</a>
-                    </div>
+                <figure>
+                    <img src="Imagenes/Escudo de la flia. Esqueleto.png" alt="Imagen de Tom">
+                </figure>
+                <div class="desctripcionpro">
+                    <h3>Familia Esqueleto</h3>
+                    <p>Familia de guardias reales</p>
+                    <button class="abrirbtn" onclick="document.querySelector('.ventana5').showModal()">Mas info</button>
                 </div>
-                <div class="unatarjeta">
-                    <figure>
-                        <img src="../Camp Snoopy Activity 1.avif" alt="Imagen de Tom">                        
-                    </figure>
-                    <div class="desctripcionpro">
-                        <h3>Familia Gerson</h3>
-                        <p>La familia mas potente de todas</p>
-                        <a href="" target="_blank">saber mas</a>
-                    </div>
+                <dialog class="ventana5">
+                    <h4>Informacion de la familia Esqueleto</h4>
+                    <p>La familia de guardias reales del subsuelo, ellos a pesar de ser la mas joven de las 4 grandes familias principales (solo lleva 3 decadas existiendo a diferencia de la otra que llevan siglos). Si bien ellos suelen morir de 3 o 4 golpes de un humano no por eso son los menos fuertes, de echo se podria decir que si no fuera por ellos la magia como la conocemos actualmente no existiria.</p>
+                    <button class="cerrarbtn" onclick="document.querySelector('.ventana5').close()">cerrar</button>
+                </dialog>
+            </div>
+            <div class="unatarjeta">
+                <figure>
+                    <img src="Imagenes/Flia. Gerson.png" alt="Imagen de Tom">
+                </figure>
+                <div class="desctripcionpro">
+                    <h3>Familia Gerson</h3>
+                    <p>La familia mas potente de todas</p>
+                    <button class="abrirbtn" onclick="document.querySelector('.ventana6').showModal()">Mas info</button>
                 </div>
-            
+                <dialog class="ventana6">
+                    <h4>Informacion de la familia Gerson</h4>
+                    <p>La familia mas antigua y dabia del subsuelo, actualmente solo sabemos que solo queda uno de todos ellos, sin enmabergo la gran edad de estos no los hace para nada debiles. Pues a pesar de ser ancianos, son los que mas experiencia en comate tienen en todo el subsuelo, aunque su velocidad puede afectarlos un poquito a la hora del combate.</p>
+                    <button class="cerrarbtn" onclick="document.querySelector('.ventana6').close()">cerrar</button>
+                </dialog>
+            </div>
+            </div>
         </section>
         <section id="Historiadeljuego">
             <h2>Historia del juego:</h2>
-            <p>La historia de este AU (Alternative universe) fue crada por mi cuando solo tenia 10 años... Ahora en la actualidad el au fue adaptado de nuevo y tiene nuevas cosas, personajes unicos y especiales. A pesar de ser muy parecido a undertale este AU nos lleva a la perspectiva de algo que tal vez, solo tal vez pudo llegar a ser undertale.</p>
+            <p>La historia de este AU (Alternative universe) fue crada por mi cuando solo tenia 10 años... Ahora en la
+                actualidad el au fue adaptado de nuevo y tiene nuevas cosas, personajes unicos y especiales. A pesar de
+                ser muy parecido a undertale este AU nos lleva a la perspectiva de algo que tal vez, solo tal vez pudo
+                llegar a ser undertale.</p>
             <h3>Historia: Tomiartesano</h3>
             <h3>Ilustraciones: Tomiartesano y amigos</h3>
         </section>
@@ -111,23 +154,12 @@
     <footer>
         <h3>&copy;2025-Tomiartesano Derechos Reservados</h3>
         <div class="navfooter">
-                <a href="#Introcucción">Introducción</a>
-                <a href="#Protagonistas">Protagonistas</a>
-                <a href="#Personajesytrasfondo">Personajes y trasfondo</a>
-                <a href="#Historiadeljuego">Historia del juego</a>
+            <a href="#Introcucción">Introducción</a>
+            <a href="#Protagonistas">Protagonistas</a>
+            <a href="#Personajesytrasfondo">Personajes y trasfondo</a>
+            <a href="#Historiadeljuego">Historia del juego</a>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const checking = document.querySelector("#checking");
-            const menuitem = document.querySelectorAll(".menuitem");
-            menuitem.forEach(function (item) {
-                item.addEventListener('click', function () {
-                    checking.checked = false; // Desmarca el checkbox
-
-                });
-            });
-        });
-    </script>
 </body>
+
 </html>
