@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Index.css">
 </head>
 
@@ -20,7 +23,7 @@
         <label for="checking"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul>
-                <li class="menuitem"><a href="#Introcucción">Introducción</a></li>
+                <li class="menuitem"><a href="#Introduccion">Introducción</a></li>
                 <li class="menuitem"><a href="#Protagonistas">Protagonistas</a></li>
                 <li class="menuitem"><a href="#Personajesytrasfondo">Personajes y trasfondo</a></li>
                 <li class="menuitem"><a href="#Historiadeljuego">Historia del juego</a></li>
@@ -28,12 +31,21 @@
         </nav>
     </header>
     <main>
-        <section id="Introcucción">
-            <h2>Introducción</h2>
-            <p>El juego comienza con dos hermanos, Tom y Frisk explorando las riunad del monte Ebott, un lugar donde se
-                rumorea an desaparecido varios niños de no mas de 13 años, sin saberlo por tropezar por una pequeña raiz
-                ambos comenzaran una aventura en la que comenzaran nuevos amigos y tal vez una nueva familia.</p>
-        </section>
+        <section id="Introduccion">
+            <div class="intro">
+                <h1>Introducción</h1>
+                <p>Todo comienza con dos hermanos, Tom y Frisk, explorando las misteriosas ruinas del Monte Ebott, un
+                    lugar
+                    envuelto en leyendas oscuras. Se dice que allí han desaparecido varios niños menores de trece años…
+                    y
+                    nadie ha vuelto para contarlo.
+
+                    Sin saberlo, al tropezar con una raíz oculta entre las piedras, los hermanos caen en un mundo
+                    subterráneo lleno de secretos, criaturas extraordinarias y emociones que cambiarán sus vidas para
+                    siempre. Lo que parecía una simple excursión se convierte en una aventura que los llevará a
+                    descubrir
+                    nuevos amigos… y quizás, una nueva familia..</p>
+            </div>
         <section id="Protagonistas">
             <h2>Protagonistas</h2>
 
@@ -50,10 +62,17 @@
                     </div>
                     <dialog class="ventana1">
                         <h4>Informacion del personaje</h4>
-                        <p>Ella es la hermana mayor de Tom por unos minutos, es inteligente y agil, aunque es un poco
-                            mas pequeña que si hermano, le teme a las alturas y es super popular en su escuela por sus
-                            ojso medio cerrados. Le gustan las tartas de caramelo que de vez en cuando cocina su hermano
-                            y </p>
+                         <h4>FRISK</h4>
+                        <p>Es la hermana mayor de Tom… por apenas unos minutos. Aunque es ligeramente más baja que
+                            él, su agilidad e inteligencia la convierten en una líder natural. Tiene una mente rápida,
+                            una curiosidad insaciable y una habilidad especial para resolver problemas bajo presión.
+
+                            A pesar de su valentía, Frisk guarda un temor profundo: las alturas. Este miedo la acompaña
+                            desde pequeña, y aunque intenta enfrentarlo, sigue siendo su mayor debilidad. En la escuela,
+                            es popular por su mirada única: sus ojos medio cerrados le dan un aire misterioso que
+                            intriga a todos.
+                            Tiene un gusto muy particular por las tartas de caramelo, una receta que su hermano Tom
+                            prepara ocasionalmente. </p>
                         <button class="cerrarbtn" onclick="document.querySelector('.ventana1').close()">cerrar</button>
                 </div>
 
@@ -67,9 +86,18 @@
                             info</button>
                         <dialog class="ventana2">
                             <h4>Informacion del personaje</h4>
-                            <p>Tom es el hermano menor de Frisk al menos por unos minutos, al caer al subsuelo tiene la
-                                misma edad que Frisk. Es valiente aunque algo tonto en ocaciones, ama cocinar y jugar
-                                con sus pocos "amigos". Admira a Frisk por ser constante en cada cosa que hace.</p>
+                              <h4>TOM</h4>
+                                <p>Es el hermano menor de Frisk… aunque solo por unos minutos. Al caer juntos al
+                                subsuelo, ambos comparten la misma edad. Tom es valiente, impulsivo y tiene un corazón
+                                enorme, aunque a veces su entusiasmo lo lleva a cometer errores algo tontos. Pero eso nolo detiene: siempre se levanta con una sonrisa y una nueva idea.
+
+                                Tiene una pasión especial por la cocina, y sus tartas de caramelo son famosas entre los
+                                pocos amigos que ha logrado hacer. Aunque su círculo es pequeño, Tom lo valora
+                                profundamente, y encuentra alegría en los momentos simples: jugar, compartir, y cuidar
+                                de quienes ama.
+
+                                Lo que más admira en el mundo es a su hermana Frisk. La ve como un ejemplo de
+                                constancia, inteligencia y coraje.</p>
                             <button class="cerrarbtn"
                                 onclick="document.querySelector('.ventana2').close()">cerrar</button>
                     </div>
@@ -90,7 +118,9 @@
                     </div>
                     <dialog class="ventana3">
                         <h4>Informacion de esta familia</h4>
-                        <p>La tragica familia real, para entender el por que le decimos... "tragica" es por que ellos an perdido a sus niños de la manera mas tragica posible... Aunque quien sabe... Quizas nosotros los players podamos a ayudarlos a tener un final feliz</p>
+                         <p>La trágica familia real, para entender el por qué le decimos... "trágica" es por que ellos han
+                            perdido a sus niños de la manera mas trágica posible... Aunque quién sabe... Quizás nosotros
+                            los players podamos a ayudarlos a tener un final feliz</p>
                         <button class="cerrarbtn" onclick="document.querySelector('.ventana3').close()">cerrar</button>
                 </div>
                 <div class="unatarjeta">
@@ -160,6 +190,18 @@
             <a href="#Historiadeljuego">Historia del juego</a>
         </div>
     </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checking = document.querySelector("#checking");
+            const menuitem = document.querySelectorAll(".menuitem");
+            menuitem.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    checking.checked = false; // Desmarca el checkbox
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
+
